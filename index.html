@@ -16,32 +16,11 @@ a:hover {
 text-decoration:underline;
 }
 
-}
-[style*="--aspect-ratio"] > :first-child {
-  width: 100%;
-}
-
-[style*="--aspect-ratio"] > img {  
-  height: auto;
-}
-
-@supports (--custom:property) {
-  [style*="--aspect-ratio"] {
-    position: relative;
-  }
-  
-  [style*="--aspect-ratio"]::before {
-    content: "";
-    display: block;
-    padding-bottom: calc(40% / (var(--aspect-ratio)));
-  }
-  
-  [style*="--aspect-ratio"] > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 3;
-  }  
+html { background-color: #000; } 
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 </style>
