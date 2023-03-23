@@ -15,20 +15,36 @@ text-decoration:none;
 a:hover {
 text-decoration:underline;
 }
+
+}
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+}
+
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(40% / (var(--aspect-ratio)));
+  }
+  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3;
+  }  
+}
+
 </style>
-
-<script language="JavaScript" type="text/javascript">
-  if (screen.width >= "1024") {
-    window.resizeTo(1024, 768);
-  }
-  if (screen.width == "800") {
-    window.resizeTo(800, 600);
-  }
-  if (screen.width <= "800") {
-    window.resizeTo(640, 420);
-  }
-</script>
-
 <!-- http://drive.sacrossi.com.br/cs/ -->
   <body TEXT="#ffffff" LINK="#33FF9F" VLINK= "#33FF9F" ALINK="#33FF9F" BGCOLOR="black">
  <pre class="lang-html prettyprint linenums">
