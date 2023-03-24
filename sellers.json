@@ -1,0 +1,17 @@
+{
+  "contact_email": "fabinho@gmail.com",
+    "identifiers": [{
+    "name": "fbnh",
+    "value": "f08c47fec0942fa0"
+  }],
+  "version": "1.0",
+  "ext": {
+    "notice": "This file is a beta and is unverified."
+  },
+  "sellers": [{
+    "seller_id": "pub-7836971837851041",
+    "is_confidential": 1,
+    "seller_type": "PUBLISHER"
+  }
+}
+  
